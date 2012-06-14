@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F55B78D1588A57F00D88406 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F55B78C1588A57F00D88406 /* HttpClient.m */; };
+		3F55B7901588AAEE00D88406 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F55B78F1588AAEE00D88406 /* CFNetwork.framework */; };
+		3FD642F21584E2B9000BA78E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD642F11584E2B9000BA78E /* UIKit.framework */; };
+		3FD642F41584E2B9000BA78E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD642F31584E2B9000BA78E /* Foundation.framework */; };
+		3FD642F61584E2B9000BA78E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD642F51584E2B9000BA78E /* CoreGraphics.framework */; };
+		3FD642FC1584E2B9000BA78E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FD642FA1584E2B9000BA78E /* InfoPlist.strings */; };
+		3FD642FE1584E2B9000BA78E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD642FD1584E2B9000BA78E /* main.m */; };
+		3FD643021584E2B9000BA78E /* HelloGaojiceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD643011584E2B9000BA78E /* HelloGaojiceAppDelegate.m */; };
+		3FD643051584E2B9000BA78E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD643031584E2B9000BA78E /* MainStoryboard.storyboard */; };
+		3FD643081584E2B9000BA78E /* HelloGaojiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD643071584E2B9000BA78E /* HelloGaojiceViewController.m */; };
+		3FD6430F1584E7D1000BA78E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6430E1584E7D1000BA78E /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F55B78B1588A57F00D88406 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		3F55B78C1588A57F00D88406 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		3F55B78F1588AAEE00D88406 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3FD642ED1584E2B9000BA78E /* HelloGaojice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloGaojice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD642F11584E2B9000BA78E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FD642F31584E2B9000BA78E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FD642F51584E2B9000BA78E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FD642F91584E2B9000BA78E /* HelloGaojice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloGaojice-Info.plist"; sourceTree = "<group>"; };
+		3FD642FB1584E2B9000BA78E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FD642FD1584E2B9000BA78E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FD642FF1584E2B9000BA78E /* HelloGaojice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloGaojice-Prefix.pch"; sourceTree = "<group>"; };
+		3FD643001584E2B9000BA78E /* HelloGaojiceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloGaojiceAppDelegate.h; sourceTree = "<group>"; };
+		3FD643011584E2B9000BA78E /* HelloGaojiceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloGaojiceAppDelegate.m; sourceTree = "<group>"; };
+		3FD643041584E2B9000BA78E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3FD643061584E2B9000BA78E /* HelloGaojiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloGaojiceViewController.h; sourceTree = "<group>"; };
+		3FD643071584E2B9000BA78E /* HelloGaojiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloGaojiceViewController.m; sourceTree = "<group>"; };
+		3FD6430E1584E7D1000BA78E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FD642EA1584E2B9000BA78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F55B7901588AAEE00D88406 /* CFNetwork.framework in Frameworks */,
+				3FD6430F1584E7D1000BA78E /* CoreLocation.framework in Frameworks */,
+				3FD642F21584E2B9000BA78E /* UIKit.framework in Frameworks */,
+				3FD642F41584E2B9000BA78E /* Foundation.framework in Frameworks */,
+				3FD642F61584E2B9000BA78E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FD642E21584E2B9000BA78E = {
+			isa = PBXGroup;
+			children = (
+				3FD642F71584E2B9000BA78E /* HelloGaojice */,
+				3FD642F01584E2B9000BA78E /* Frameworks */,
+				3FD642EE1584E2B9000BA78E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FD642EE1584E2B9000BA78E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD642ED1584E2B9000BA78E /* HelloGaojice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FD642F01584E2B9000BA78E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F55B78F1588AAEE00D88406 /* CFNetwork.framework */,
+				3FD6430E1584E7D1000BA78E /* CoreLocation.framework */,
+				3FD642F11584E2B9000BA78E /* UIKit.framework */,
+				3FD642F31584E2B9000BA78E /* Foundation.framework */,
+				3FD642F51584E2B9000BA78E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FD642F71584E2B9000BA78E /* HelloGaojice */ = {
+			isa = PBXGroup;
+			children = (
+				3FD643001584E2B9000BA78E /* HelloGaojiceAppDelegate.h */,
+				3FD643011584E2B9000BA78E /* HelloGaojiceAppDelegate.m */,
+				3FD643031584E2B9000BA78E /* MainStoryboard.storyboard */,
+				3FD643061584E2B9000BA78E /* HelloGaojiceViewController.h */,
+				3FD643071584E2B9000BA78E /* HelloGaojiceViewController.m */,
+				3F55B78B1588A57F00D88406 /* HttpClient.h */,
+				3F55B78C1588A57F00D88406 /* HttpClient.m */,
+				3FD642F81584E2B9000BA78E /* Supporting Files */,
+			);
+			path = HelloGaojice;
+			sourceTree = "<group>";
+		};
+		3FD642F81584E2B9000BA78E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FD642F91584E2B9000BA78E /* HelloGaojice-Info.plist */,
+				3FD642FA1584E2B9000BA78E /* InfoPlist.strings */,
+				3FD642FD1584E2B9000BA78E /* main.m */,
+				3FD642FF1584E2B9000BA78E /* HelloGaojice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FD642EC1584E2B9000BA78E /* HelloGaojice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD6430B1584E2B9000BA78E /* Build configuration list for PBXNativeTarget "HelloGaojice" */;
+			buildPhases = (
+				3FD642E91584E2B9000BA78E /* Sources */,
+				3FD642EA1584E2B9000BA78E /* Frameworks */,
+				3FD642EB1584E2B9000BA78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloGaojice;
+			productName = HelloGaojice;
+			productReference = 3FD642ED1584E2B9000BA78E /* HelloGaojice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FD642E41584E2B9000BA78E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HelloGaojice;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3FD642E71584E2B9000BA78E /* Build configuration list for PBXProject "HelloGaojice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FD642E21584E2B9000BA78E;
+			productRefGroup = 3FD642EE1584E2B9000BA78E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FD642EC1584E2B9000BA78E /* HelloGaojice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FD642EB1584E2B9000BA78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD642FC1584E2B9000BA78E /* InfoPlist.strings in Resources */,
+				3FD643051584E2B9000BA78E /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FD642E91584E2B9000BA78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD642FE1584E2B9000BA78E /* main.m in Sources */,
+				3FD643021584E2B9000BA78E /* HelloGaojiceAppDelegate.m in Sources */,
+				3FD643081584E2B9000BA78E /* HelloGaojiceViewController.m in Sources */,
+				3F55B78D1588A57F00D88406 /* HttpClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FD642FA1584E2B9000BA78E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD642FB1584E2B9000BA78E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FD643031584E2B9000BA78E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD643041584E2B9000BA78E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FD643091584E2B9000BA78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FD6430A1584E2B9000BA78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FD6430C1584E2B9000BA78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloGaojice/HelloGaojice-Prefix.pch";
+				INFOPLIST_FILE = "HelloGaojice/HelloGaojice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FD6430D1584E2B9000BA78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloGaojice/HelloGaojice-Prefix.pch";
+				INFOPLIST_FILE = "HelloGaojice/HelloGaojice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FD642E71584E2B9000BA78E /* Build configuration list for PBXProject "HelloGaojice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD643091584E2B9000BA78E /* Debug */,
+				3FD6430A1584E2B9000BA78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD6430B1584E2B9000BA78E /* Build configuration list for PBXNativeTarget "HelloGaojice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD6430C1584E2B9000BA78E /* Debug */,
+				3FD6430D1584E2B9000BA78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FD642E41584E2B9000BA78E /* Project object */;
+}
