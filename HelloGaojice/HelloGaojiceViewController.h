@@ -11,10 +11,10 @@
 
 @interface HelloGaojiceViewController : UIViewController <CLLocationManagerDelegate>
 - (IBAction)refresh:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
-@property (weak, nonatomic) IBOutlet UILabel *label3;
+ 
+@property (weak, nonatomic) IBOutlet UITextView *logText;
+
 @property (nonatomic,strong)CLLocationManager *locationManager;
-@property (nonatomic)CLLocation *location;
+
 
 @end

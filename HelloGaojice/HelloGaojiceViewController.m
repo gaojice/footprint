@@ -14,10 +14,8 @@
 @end
 
 @implementation HelloGaojiceViewController
-@synthesize label1;
-@synthesize label2;
-@synthesize label3;
-@synthesize location;
+
+@synthesize logText;
 @synthesize locationManager;
 
 
@@ -36,9 +34,7 @@
 
 - (void)viewDidUnload
 {
-    [self setLabel1:nil];
-    [self setLabel2:nil];
-    [self setLabel3:nil];
+    [self setLogText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -50,31 +46,48 @@
 
 - (IBAction)refresh:(id)sender {
    
-    [self.locationManager startUpdatingLocation];
+    
+    UISegmentedControl *button=(UISegmentedControl*) sender;
+    NSString *log=[NSString stringWithFormat:@"\n配置更新：%d",button.selectedSegmentIndex];
+    self.logText.text=[log stringByAppendingString:self.logText.text];
+    
+    
+    switch (button.selectedSegmentIndex) {
+        case 0:
+            [self.locationManager stopMonitoringSignificantLocationChanges];
+            [self.locationManager stopUpdatingLocation];
+            break;
+        case 1:
+            [self.locationManager stopUpdatingLocation];
+            [self.locationManager startMonitoringSignificantLocationChanges];
+            break;
+        case 2:
+            [self.locationManager stopMonitoringSignificantLocationChanges];
+            [self.locationManager startUpdatingLocation];
+            break;
+        default:
+            break;
+    }
  
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
-    location=newLocation;
+    
     CLLocationCoordinate2D loc = [newLocation coordinate];
     NSString *lat =[NSString stringWithFormat:@"%f",loc.latitude];//get latitude
     NSString *lon =[NSString stringWithFormat:@"%f",loc.longitude];//get longitude
-    self.label1.text=lat;
-    self.label2.text=lon;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
     
     
     NSString *stringFromDate = [formatter stringFromDate:newLocation.timestamp];
-    self.label3.text=stringFromDate;    
+    self.logText.text=stringFromDate;    
 
-
-    NSLog(@"%@,%@,%@",lat,lon,stringFromDate);
     HttpClient *client=[[HttpClient alloc] init];
     [client reportData:loc];
-
+    self.logText.text=[[NSString stringWithFormat:@"\n%@,%@,%@",lat,lon,stringFromDate] stringByAppendingString:self.logText.text];
 }
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-    printf("error");
+    self.logText.text=[@"error" stringByAppendingString:self.logText.text];
 }
 @end
