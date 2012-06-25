@@ -7,7 +7,9 @@
 //
 
 #import "HelloGaojiceViewController.h"
+#import "HelloGaojiceAppDelegate.h"
 #import "HttpClient.h"
+#import "LatLong.h"
 
 @interface HelloGaojiceViewController ()
 
@@ -17,6 +19,7 @@
 
 @synthesize logText;
 @synthesize locationManager;
+@synthesize managedObjectContext;
 
 
 - (void)viewDidLoad
@@ -28,6 +31,9 @@
     self.locationManager.delegate=self;
     self.locationManager.desiredAccuracy=kCLLocationAccuracyBest;
     self.locationManager.distanceFilter=5.0;
+    HelloGaojiceAppDelegate *theAppDelegate = (HelloGaojiceAppDelegate*)[UIApplication sharedApplication];
+    self.managedObjectContext=theAppDelegate.managedObjectContext;
+     
     
        
 }
@@ -73,19 +79,27 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
     
-    CLLocationCoordinate2D loc = [newLocation coordinate];
-    NSString *lat =[NSString stringWithFormat:@"%f",loc.latitude];//get latitude
-    NSString *lon =[NSString stringWithFormat:@"%f",loc.longitude];//get longitude
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSLog(@">>start app "); 
+    LatLong *person=(LatLong *)[NSEntityDescription insertNewObjectForEntityForName:@"LatLong" inManagedObjectContext:[self managedObjectContext]]; 
+    person.latitude=@"张三";
     
+    NSError *error;
     
-    NSString *stringFromDate = [formatter stringFromDate:newLocation.timestamp];
-    self.logText.text=stringFromDate;    
-
-    HttpClient *client=[[HttpClient alloc] init];
-    [client reportData:loc];
-    self.logText.text=[[NSString stringWithFormat:@"\n%@,%@,%@",lat,lon,stringFromDate] stringByAppendingString:self.logText.text];
+    if (![[self managedObjectContext] save:&error]) { 
+        NSLog(@"error!"); 
+    }else { 
+        NSLog(@"save person ok."); 
+    }
+    
+    NSFetchRequest *request=[[NSFetchRequest alloc] init]; 
+    NSEntityDescription *entity=[NSEntityDescription entityForName:@"Person" inManagedObjectContext:[self managedObjectContext]]; 
+    [request setEntity:entity];
+    
+    NSArray *results=[[[self managedObjectContext] executeFetchRequest:request error:&error] copy];
+    
+    for (LatLong *p in results) { 
+        NSLog(@">> p.id: %i p.name: %@",p.latitude,p.longitude); 
+    }
 }
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     self.logText.text=[@"error" stringByAppendingString:self.logText.text];

@@ -18,6 +18,10 @@
 		3FD643051584E2B9000BA78E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD643031584E2B9000BA78E /* MainStoryboard.storyboard */; };
 		3FD643081584E2B9000BA78E /* HelloGaojiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD643071584E2B9000BA78E /* HelloGaojiceViewController.m */; };
 		3FD6430F1584E7D1000BA78E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6430E1584E7D1000BA78E /* CoreLocation.framework */; };
+		3FF4CC0015988A91004BE31A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4CBFE15988A91004BE31A /* Model.xcdatamodeld */; };
+		3FF4CC0615988DF6004BE31A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF4CC0515988DF6004BE31A /* CoreData.framework */; };
+		3FF4CC471598A608004BE31A /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 3FF4CBFE15988A91004BE31A /* Model.xcdatamodeld */; };
+		3FF4CC4D1598ACDD004BE31A /* LatLong.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4CC4C1598ACDD004BE31A /* LatLong.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		3FD643061584E2B9000BA78E /* HelloGaojiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloGaojiceViewController.h; sourceTree = "<group>"; };
 		3FD643071584E2B9000BA78E /* HelloGaojiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloGaojiceViewController.m; sourceTree = "<group>"; };
 		3FD6430E1584E7D1000BA78E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3FF4CBFF15988A91004BE31A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3FF4CC0515988DF6004BE31A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3FF4CC4B1598ACDD004BE31A /* LatLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatLong.h; sourceTree = "<group>"; };
+		3FF4CC4C1598ACDD004BE31A /* LatLong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatLong.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF4CC0615988DF6004BE31A /* CoreData.framework in Frameworks */,
 				3F55B7901588AAEE00D88406 /* CFNetwork.framework in Frameworks */,
 				3FD6430F1584E7D1000BA78E /* CoreLocation.framework in Frameworks */,
 				3FD642F21584E2B9000BA78E /* UIKit.framework in Frameworks */,
@@ -76,6 +85,7 @@
 		3FD642F01584E2B9000BA78E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FF4CC0515988DF6004BE31A /* CoreData.framework */,
 				3F55B78F1588AAEE00D88406 /* CFNetwork.framework */,
 				3FD6430E1584E7D1000BA78E /* CoreLocation.framework */,
 				3FD642F11584E2B9000BA78E /* UIKit.framework */,
@@ -96,6 +106,9 @@
 				3F55B78B1588A57F00D88406 /* HttpClient.h */,
 				3F55B78C1588A57F00D88406 /* HttpClient.m */,
 				3FD642F81584E2B9000BA78E /* Supporting Files */,
+				3FF4CBFE15988A91004BE31A /* Model.xcdatamodeld */,
+				3FF4CC4B1598ACDD004BE31A /* LatLong.h */,
+				3FF4CC4C1598ACDD004BE31A /* LatLong.m */,
 			);
 			path = HelloGaojice;
 			sourceTree = "<group>";
@@ -162,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF4CC471598A608004BE31A /* Model.xcdatamodeld in Resources */,
 				3FD642FC1584E2B9000BA78E /* InfoPlist.strings in Resources */,
 				3FD643051584E2B9000BA78E /* MainStoryboard.storyboard in Resources */,
 			);
@@ -178,6 +192,8 @@
 				3FD643021584E2B9000BA78E /* HelloGaojiceAppDelegate.m in Sources */,
 				3FD643081584E2B9000BA78E /* HelloGaojiceViewController.m in Sources */,
 				3F55B78D1588A57F00D88406 /* HttpClient.m in Sources */,
+				3FF4CC0015988A91004BE31A /* Model.xcdatamodeld in Sources */,
+				3FF4CC4D1598ACDD004BE31A /* LatLong.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +308,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FF4CBFE15988A91004BE31A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FF4CBFF15988A91004BE31A /* Model.xcdatamodel */,
+			);
+			currentVersion = 3FF4CBFF15988A91004BE31A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FD642E41584E2B9000BA78E /* Project object */;
 }

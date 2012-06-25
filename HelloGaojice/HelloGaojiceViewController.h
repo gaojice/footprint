@@ -9,12 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface HelloGaojiceViewController : UIViewController <CLLocationManagerDelegate>
+@interface HelloGaojiceViewController : UIViewController <CLLocationManagerDelegate>{
+     
+}
 - (IBAction)refresh:(id)sender;
  
 @property (weak, nonatomic) IBOutlet UITextView *logText;
 
 @property (nonatomic,strong)CLLocationManager *locationManager;
+
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 
 @end
